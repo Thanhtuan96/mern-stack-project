@@ -21,10 +21,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 <<<<<<< HEAD
+<<<<<<< HEAD
 app.use(express.static(path.join(__dirname, 'public')));
 =======
 app.use(express.static(path.join(__dirname, 'build')));
 >>>>>>> 93f37ec411ea1540bd53ffbc684ee8f6364f863e
+=======
+app.use(express.static(path.join(__dirname, 'build')));
+>>>>>>> origin/main
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
